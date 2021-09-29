@@ -19,7 +19,12 @@ switch($parametros[0]){
     case 'home';
         showHome();
         break;
-
+    case 'createTask';
+        createTask();
+    case 'deleteTask';
+        deleteTask($parametros[1]);
+    case 'updateTask';
+        updateTask($parametros[1]);
     default;
         echo('404 page not found'); 
 } 
